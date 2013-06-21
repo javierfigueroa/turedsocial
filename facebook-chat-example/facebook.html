@@ -59,7 +59,7 @@ $(document).ready(function () {
 		} else {
 			alert('User is logged out');
 		}
-	});
+	},{scope: 'xmpp_login'});
           
     connection = new Strophe.Connection(BOSH_SERVICE);
     connection.rawInput = rawInput;
